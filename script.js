@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Special message for Saturday morning at 1 AM Central Time
         if (day === 6 && hours === 1) {
-            addressDiv.textContent = "Dragonroom address will be provided now.";
+            addressDiv.textContent = "2239 S Michigan Ave, Chicago, IL 60616.";
             countdownDiv.textContent = "";
         }
     }
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-        countdownDiv.textContent = `Time until address is displayed: ${hours}h ${minutes}m ${seconds}s`;
+        countdownDiv.textContent = ``;
     }
 
     displayAddress();
